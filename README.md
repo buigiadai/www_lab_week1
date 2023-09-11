@@ -11,6 +11,7 @@ active, 0-deactive, -1-xóa)
 is_grant nhận giá trị 0-diasable, 1-enable.)
 Một bảng có tên log để ghi vết lần đăng nhập. Thông tin bao gồm: id (auto-increment), account
 đăng nhập, ngày giờ đăng nhập, ngày giờ đăng xuất, ghi chú.
+
 Tạo một jakartaEE project có tên week01_lab_HotenSv_mssv (Có thể kết nối GitHub/GitLab để
 push code). Thực hiện các công việc sau:
 - Tạo một servlet có tên ControlServlet (partern cùng tên). Servlet này nhận một tham số
@@ -43,8 +44,9 @@ Maven:
 <version>3.2.0</version>
 </dependency>
 Figure 1. Project structure
+
 Hướng dẫn Git-Hub:
-Vào trang : https://github.com/loginĐăng nhập vào Git-Hub. Nếu chưa có tài khoản thì tạo tài khoản mới.
+Vào trang : https://github.com/login Đăng nhập vào Git-Hub. Nếu chưa có tài khoản thì tạo tài khoản mới.
 Sau khi đăng nhập thành công, cửa sổ sẽ ở dạng này
 Nhấn New để tạo mới 1 projectNhấn nút Create bên dưới để tạo project
 Nhấn nút Code, copy URL.Trên IntelliJ IDEA, vào menu Git (sẽ xuất hiện nếu ban đầu bạn check vào
@@ -120,7 +122,5 @@ PRIMARY KEY (`role_id`)
 INSERT INTO `role` (`role_id`, `role_name`, `description`, `status`) VALUES
 ('admin', 'administrator', 'admin role', 1),
 ('user', 'user', 'user role', 1);
-Muốn xem relationship diagram: vào trang https://dev.mysql.com/downloads/workbench/,
-download MySQL Workbench (MW) sau đó cài đặt sau đó mở MySQL Workbench lên.Tạo 1 kết nối. Nhấn Test Connection để kiểm tra kết nối thành công không.Trong MW, Vào menu Database, chọn “Reverse Engineer”.
-Nhấn Next cho đến khi hoàn tất.
-ER diagram sẽ xuất hiện và bạn có thể hiệu chỉnh nó.
+Muốn xem relationship diagram: vào trang https://dev.mysql.com/downloads/workbench/, download MySQL Workbench (MW) sau đó cài đặt sau đó mở MySQL Workbench lên.Tạo 1 kết nối. Nhấn Test Connection để kiểm tra kết nối thành công không.Trong MW, Vào menu Database, chọn “Reverse Engineer”.
+Nhấn Next cho đến khi hoàn tất. ER diagram sẽ xuất hiện và bạn có thể hiệu chỉnh nó.
